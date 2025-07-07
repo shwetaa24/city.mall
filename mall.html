@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>City Center Mall</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
+    header { background: #003366; color: #fff; padding: 1.5em 0; text-align: center; }
+    nav { background: #0055a5; padding: 0.5em 0; }
+    nav a { color: #fff; text-decoration: none; margin: 0 1.5em; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .hero { background: #e0f7fa; text-align: center; padding: 2em 0; }
+    .container { max-width: 1100px; margin: 2em auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 2em; }
+    section { margin-bottom: 2em; }
+    section h2 { color: #003366; border-left: 6px solid #0055a5; padding-left: 0.5em; margin-bottom: 1em; }
+    .shop-list, .facility-list, .event-list { display: flex; flex-wrap: wrap; gap: 2em; justify-content: center; list-style: none; padding: 0; }
+    .shop, .facility, .event {
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px #0001;
+      padding: 1.5em;
+      width: 220px;
+      text-align: center;
+      border: 2px solid #0055a5;
+    }
+    .shop b, .facility b, .event b { color: #0055a5; }
+    .footer { background: #003366; color: #fff; text-align: center; padding: 1em 0; margin-top: 2em; }
+    .contact h2 { color: #003366; }
+    .contact form button {
+      background: #0055a5;
+      color: #fff;
+      padding: 0.7em 2em;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .contact form button:hover {
+      background: #003366;
+    }
+    @media (max-width: 700px) {
+      .container { padding: 1em; }
+      nav a { margin: 0 0.5em; }
+      .shop-list, .facility-list, .event-list { flex-direction: column; gap: 1em; }
+      .shop, .facility, .event { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>City Center Mall</h1>
+    <p>Your One-Stop Shopping & Entertainment Destination</p>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Shops</a>
+    <a href="#">Facilities</a>
+    <a href="#">Events</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="hero">
+    <h2>Welcome to City Center Mall</h2>
+    <p>Shop, Dine, and Enjoy with Family & Friends!</p>
+  </div>
+  <div class="container">
+    <section class="shops">
+      <h2>Featured Shops</h2>
+      <ul class="shop-list">
+        <li class="shop"><b>Fashion Hub</b><br>Trendy clothing for all ages</li>
+        <li class="shop"><b>ElectroWorld</b><br>Latest gadgets & electronics</li>
+        <li class="shop"><b>BookNest</b><br>Books, magazines, and stationery</li>
+        <li class="shop"><b>Kids Zone</b><br>Toys, games, and fun for kids</li>
+      </ul>
+    </section>
+    <section class="facilities">
+      <h2>Our Facilities</h2>
+      <ul class="facility-list">
+        <li class="facility"><b>Food Court</b><br>Multi-cuisine dining</li>
+        <li class="facility"><b>Multiplex Cinema</b><br>Latest movies in comfort</li>
+        <li class="facility"><b>Parking</b><br>Ample and secure parking</li>
+        <li class="facility"><b>ATM & Banking</b><br>On-site banking services</li>
+      </ul>
+    </section>
+    <section class="food">
+      <h2>Food & Dining</h2>
+      <ul class="shop-list">
+        <li class="shop"><b>Pizza Palace</b><br>Delicious pizzas and Italian cuisine</li>
+        <li class="shop"><b>Burger Barn</b><br>Juicy burgers and fries</li>
+        <li class="shop"><b>Spice Route</b><br>Authentic Indian flavors</li>
+        <li class="shop"><b>Sushi World</b><br>Fresh sushi and Japanese dishes</li>
+        <li class="shop"><b>Café Aroma</b><br>Coffee, pastries, and snacks</li>
+      </ul>
+    </section>
+    <section class="payment-methods">
+      <h2>Payment Methods</h2>
+      <ul class="facility-list" style="justify-content: flex-start;">
+        <li class="facility">
+          <img src="https://img.icons8.com/color/48/000000/cash-in-hand.png" alt="Cash" style="vertical-align:middle;"><br><b>Cash</b>
+        </li>
+        <li class="facility">
+          <img src="https://img.icons8.com/color/48/000000/bank-cards.png" alt="Cards" style="vertical-align:middle;"><br><b>Credit/Debit Cards</b>
+        </li>
+        <li class="facility">
+          <img src="https://img.icons8.com/color/48/000000/qr-code.png" alt="UPI" style="vertical-align:middle;"><br><b>UPI</b>
+        </li>
+        <li class="facility">
+          <img src="https://img.icons8.com/color/48/000000/google-pay-india.png" alt="Google Pay" style="vertical-align:middle;"><br><b>Google Pay</b>
+        </li>
+        <li class="facility">
+          <img src="https://img.icons8.com/color/48/000000/paytm.png" alt="Paytm" style="vertical-align:middle;"><br><b>Paytm</b>
+        </li>
+        <li class="facility">
+          <img src="https://img.icons8.com/color/48/000000/phonepe.png" alt="PhonePe" style="vertical-align:middle;"><br><b>PhonePe</b>
+        </li>
+      </ul>
+    </section>
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <ul class="event-list">
+        <li class="event"><b>Summer Sale</b><br>Up to 50% off!<br>June 10-20</li>
+        <li class="event"><b>Kids Carnival</b><br>Games & fun activities<br>July 5</li>
+        <li class="event"><b>Live Music Night</b><br>Enjoy live bands<br>Every Saturday</li>
+      </ul>
+    </section>
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>
+        <b>Address:</b> 123 Main Street, Your City<br>
+        <b>Phone:</b> (0123) 456-7890<br>
+        <b>Email:</b> <a href="mailto:info@citycentermall.com">info@citycentermall.com</a>
+      </p>
+      <form style="max-width:400px;margin:1.5em auto 0 auto;text-align:left;">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" style="width:100%;padding:0.5em;margin-bottom:1em;"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" style="width:100%;padding:0.5em;margin-bottom:1em;"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" style="width:100%;padding:0.5em;margin-bottom:1em;"></textarea><br>
+        <button type="submit" style="background:#0055a5;color:#fff;padding:0.7em 2em;border:none;border-radius:6px;font-weight:bold;">Send</button>
+      </form>
+    </section>
+  </div>
+  <footer class="footer">
+    &copy; 2025 City Center Mall | Designed by You
+  </footer>
+</body>
+</html>
